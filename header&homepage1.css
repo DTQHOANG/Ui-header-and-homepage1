@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif Tomil' , serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.slider-item {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.slider-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.slider-item1 {
+    background-image: url(/images/ava3.jpg);
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item2 {
+    background-image: url(/images/292091011_515430203709114_4335025629232149436_n.jpg);
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item3 {
+    background-image: url(/images/329655211_702833647962281_1396225402008555742_n.jpg);
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-item4 {
+    background-image: url(/images/329787801_858584985233180_2823460117155149280_n.jpg);
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.owl-prev, .owl-next {
+    display: none!important;
+}
+.owl-dots {
+    display: none!important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding-top: 25px;
+}
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-right: 50px;
+}
+.header-nav ul li{
+    margin-left: 20px;
+    padding: 6px 0;
+}
+.header-nav ul li:hover a {
+    color: black;
+}
+.header-nav ul li:first-child a {
+    background-color: black;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.header-nav ul li:first-child :hover a {
+    color: black;
+}
+.header-nav ul li:first-child :hover {
+    background-color: white;
+}
+.header-nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+
+.center {
+    z-index: 100;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+.center .title {
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.center button {
+    margin-top: 20px;
+    background: none;
+    border: none;
+}
+.center .btn {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 30px;
+    margin: 0 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.center .btn:hover {
+    background: black;
+    color: white;
+}
+.center .btn:nth-child(1) {
+    border: none;
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .header-nav {
+        display: none;
+    }
+    .logo {
+        padding-left: 20px;
+        font-size: 30px;
+    } */
+}
+/* Đang làm navbar-toggler active chưa xong */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none; 
+}
+@media (max-width: 1000px){
+    label.logo2 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .header-nav ul li a {
+        font-size: 16px;  
+    }
+}
+@media (max-width: 950px) {
+    .checkbtn {
+        display: block;
+    }
+}

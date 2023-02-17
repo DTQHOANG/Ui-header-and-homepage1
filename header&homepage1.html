@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UI header anhd homepage1</title>
+        <link rel="stylesheet" href="header&homepage1.css">
+        <meta charset="UTM -8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="#">AVA STUDIO</a>
+            <div class="header-nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="center">
+            <div class="title">Ava studio</div>
+            <button class="btn">Learn More</button>
+            <button class="btn">Shop</button>
+        </div>
+
+        <section class="slider owl-carousel owl-theme">
+            <div class="slider-item slider-item1">
+            </div>
+            <div class="slider-item slider-item2">
+            </div>
+            <div class="slider-item slider-item3">
+            </div>
+            <div class="slider-item slider-item4">
+            </div>
+        </section>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel();
+            });
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
